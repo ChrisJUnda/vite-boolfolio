@@ -1,4 +1,8 @@
 import { createApp } from 'vue'
+
+import { router } from './router';
+
+
 import './scss/style.scss'
 
 // Import our custom CSS
@@ -24,5 +28,6 @@ library.add(faUserSecret);
 import App from "./App.vue";
 
 createApp(App)
+    .use(router)
     .component('font-awesome-icon', FontAwesomeIcon)
     .mount('#app')
