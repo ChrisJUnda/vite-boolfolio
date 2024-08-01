@@ -23,7 +23,7 @@ export default {
         <li class="nav-item">
           <!-- <a class="nav-link" href="#">Blog</a> -->
           <router-link :to="{name:'projects'}" class="nav-link" >
-           Blog
+           Projects
            </router-link>
         </li>
         <li class="nav-item">

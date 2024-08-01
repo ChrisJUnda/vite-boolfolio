@@ -6,6 +6,8 @@ import ProjectList from "./pages/ProjectList.vue";
 
 import AppAbout from "./pages/AppAbout.vue";
 
+import ProjectDetail from "./pages/ProjectDetail.vue";
+
 const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -20,10 +22,16 @@ const router = createRouter({
             component: ProjectList
         },
         {
+            path: '/blog/:slug',
+            name: 'detail',
+            component: ProjectDetail
+        },
+        {
             path: '/about',
             name: 'posts',
             component: AppAbout
         },
+
     ]
 });
 
